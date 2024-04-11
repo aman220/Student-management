@@ -1,0 +1,42 @@
+import { DefaultTheme, NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import * as React from "react";
+import Colors from "../constants/Colors";
+import { RootStackParamList } from "../types";
+import HomeScreen from "../screens/HomeScreen";
+import BottomNav from "../screens/BottamNav/BottamNav";
+import LoginScreen from "../screens/Onboarding/LoginScreen";
+import RegisterScreen from "../screens/Onboarding/RegisterScreen";
+import WelcomeScreen from "../screens/Onboarding/WelcomeScreen";
+
+const theme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    background: Colors.white,
+  },
+};
+
+export default function Navigation() {
+  return (
+    <NavigationContainer theme={theme}>
+      <RootNavigator />
+    </NavigationContainer>
+  );
+}
+const Stack = createNativeStackNavigator<RootStackParamList>();
+
+function RootNavigator() {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Stack.Screen name='WelcomeScreen' component={WelcomeScreen} />
+      <Stack.Screen name='LoginScreen' component={LoginScreen} />
+      <Stack.Screen name='RegisterScreen' component={RegisterScreen} />
+      <Stack.Screen name='BottomNav' component={BottomNav} />
+    </Stack.Navigator>
+  );
+}
