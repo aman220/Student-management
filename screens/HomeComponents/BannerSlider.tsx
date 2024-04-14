@@ -24,8 +24,8 @@ const BannerSlider: React.FC = () => {
   
   const images: { index: number; path: { uri: string } }[] = [
     { index: 0, path: { uri: 'https://kaspiunique.com/Temp/school1%20(1).png' } },
-    { index: 1, path: { uri: 'https://kaspiunique.com/Temp/spandhansds.png' } },
-    { index: 2, path: { uri: 'https://kaspiunique.com/Temp/34grewg.webp' } },
+    { index: 1, path: { uri: 'https://kaspiunique.com/Temp/school2.png' } },
+    { index: 2, path: { uri: 'https://kaspiunique.com/Temp/school3.png' } },
   ];
   
   

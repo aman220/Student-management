@@ -8,6 +8,10 @@ import BottomNav from "../screens/BottamNav/BottamNav";
 import LoginScreen from "../screens/Onboarding/LoginScreen";
 import RegisterScreen from "../screens/Onboarding/RegisterScreen";
 import WelcomeScreen from "../screens/Onboarding/WelcomeScreen";
+import TimeTable from "../screens/QuickActionScreens/TimeTable";
+import AttendanceScreen from "../screens/Attendance";
+import FeeDetails from "../screens/QuickActionScreens/FeeDetails";
+import Syllabus from "../screens/QuickActionScreens/Syllabus";
 
 const theme = {
   ...DefaultTheme,
@@ -37,6 +41,10 @@ function RootNavigator() {
       <Stack.Screen name='LoginScreen' component={LoginScreen} />
       <Stack.Screen name='RegisterScreen' component={RegisterScreen} />
       <Stack.Screen name='BottomNav' component={BottomNav} />
+      <Stack.Screen name='TimeTable' component={TimeTable} />
+      <Stack.Screen name='Attendance' component={AttendanceScreen} />
+      <Stack.Screen name='Feedetails' component={FeeDetails} />
+      <Stack.Screen name='Syllabus' component={Syllabus} />
     </Stack.Navigator>
   );
 }

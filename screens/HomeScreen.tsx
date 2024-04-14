@@ -23,6 +23,7 @@ import LocationSection from "./HomeComponents/Location";
 import BannerSlider from "./HomeComponents/BannerSlider";
 import ProfileCard from "./HomeComponents/ProfileCard";
 import TodaysLecture from "./HomeComponents/TodaysLectures";
+import QuickAction from "./HomeComponents/QuickAction";
 
 
 const HomeScreen: React.FC = () => {
@@ -37,12 +38,15 @@ const HomeScreen: React.FC = () => {
     });
 
     return (
-        <SafeAreaView style={styles.container}>
-            <LocationSection/>
+        <View style={styles.container}>
+         <LocationSection/>
+        <ScrollView>
             <BannerSlider/>
             <ProfileCard/>
             <TodaysLecture/>
-        </SafeAreaView>
+            <QuickAction/>
+        </ScrollView>
+        </View>
     );
 };
 
