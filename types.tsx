@@ -16,6 +16,10 @@ export type RootStackParamList = {
  Attendance:undefined;
  Feedetails :undefined;
  Syllabus:undefined;
+ Hirarchy:undefined;
+ Porgress:undefined;
+ HelpScreen:undefined;
+ LiberaryScreen:undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =

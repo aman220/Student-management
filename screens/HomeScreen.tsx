@@ -24,6 +24,7 @@ import BannerSlider from "./HomeComponents/BannerSlider";
 import ProfileCard from "./HomeComponents/ProfileCard";
 import TodaysLecture from "./HomeComponents/TodaysLectures";
 import QuickAction from "./HomeComponents/QuickAction";
+import TopPlacements from "./HomeComponents/TopPlacements";
 
 
 const HomeScreen: React.FC = () => {
@@ -43,6 +44,7 @@ const HomeScreen: React.FC = () => {
         <ScrollView>
             <BannerSlider/>
             <ProfileCard/>
+            {/* <TopPlacements/> */}
             <TodaysLecture/>
             <QuickAction/>
         </ScrollView>

@@ -237,6 +237,7 @@ const Profile: React.FC = () => {
             <View style={styles.card}>
                 {/* my profile button  */}
                 <TouchableOpacity
+                
                 >
                     <View
                         style={{
@@ -257,6 +258,7 @@ const Profile: React.FC = () => {
                     style={{ backgroundColor: Colors.white, height: 2, marginBottom: 10 }}
                 ></View>
                 <TouchableOpacity
+                onPress={()=>{nav.navigate("Porgress")}}
                 >
                     <View
                         style={{
@@ -277,7 +279,7 @@ const Profile: React.FC = () => {
                     style={{ backgroundColor: Colors.white, height: 2, marginBottom: 10 }}
                 ></View>
 
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=>{nav.navigate("HelpScreen")}}>
                     <View
                         style={{
                             flexDirection: "row",

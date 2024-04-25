@@ -12,6 +12,10 @@ import TimeTable from "../screens/QuickActionScreens/TimeTable";
 import AttendanceScreen from "../screens/Attendance";
 import FeeDetails from "../screens/QuickActionScreens/FeeDetails";
 import Syllabus from "../screens/QuickActionScreens/Syllabus";
+import Hirarchy from "../screens/QuickActionScreens/Hirarchy";
+import Porgress from "../screens/AccountScreens/Progress";
+import HelpScreen from "../screens/QuickActionScreens/HelpScreen";
+import LiberaryScreen from "../screens/QuickActionScreens/LibraryScreen";
 
 const theme = {
   ...DefaultTheme,
@@ -45,6 +49,10 @@ function RootNavigator() {
       <Stack.Screen name='Attendance' component={AttendanceScreen} />
       <Stack.Screen name='Feedetails' component={FeeDetails} />
       <Stack.Screen name='Syllabus' component={Syllabus} />
+      <Stack.Screen name='Hirarchy' component={Hirarchy} />
+      <Stack.Screen name='Porgress' component={Porgress} />
+      <Stack.Screen name='HelpScreen' component={HelpScreen} />
+      <Stack.Screen name='LiberaryScreen' component={LiberaryScreen} />
     </Stack.Navigator>
   );
 }

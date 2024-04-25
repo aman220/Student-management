@@ -41,12 +41,12 @@ const QuickAction: React.FC = () => {
         { name: "Placement", icon: "school", lightColor: lightColors[0] , action: ()=>{nav.navigate("TimeTable")}},
         { name: "Attendance", icon: "clock", lightColor: lightColors[1] ,action: ()=>{nav.navigate("Attendance")}},
         { name: "Calendar", icon: "calendar", lightColor: lightColors[2] },
-        { name: "Library", icon: "library", lightColor: lightColors[3] },
+        { name: "Library", icon: "library", lightColor: lightColors[3] , action: ()=>{nav.navigate("LiberaryScreen")} },
         { name: "Syllabus", icon: "book-open-page-variant", lightColor: lightColors[4] , action: ()=>{nav.navigate("Syllabus")} },
         { name: "Fee Details", icon: "credit-card", lightColor: lightColors[5] ,action: ()=>{nav.navigate("Feedetails")} },
-        { name: "Hierarchy", icon: "account-group", lightColor: lightColors[6] },
+        { name: "Hierarchy", icon: "account-group", lightColor: lightColors[6] , action :()=>{nav.navigate("Hirarchy")} },
         { name: "Timetable", icon: "timetable", lightColor: lightColors[7],action: ()=>{nav.navigate("TimeTable")} },
-        { name: "Help Desk", icon: "help-circle", lightColor: lightColors[8] },
+        { name: "Help Desk", icon: "help-circle", lightColor: lightColors[8] , action : ()=>{nav.navigate("HelpScreen")}},
     ];
 
     const styles = StyleSheet.create({
