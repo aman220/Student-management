@@ -16,12 +16,13 @@ import Spacing from "../../constants/Spacing";
 import FontSize from "../../constants/FontSize";
 import Font from "../../constants/Font";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { useNavigation } from "@react-navigation/native";
 
 
 const ProfileCard: React.FC = () => {
 
     const colorScheme = useColorScheme();
-
+    const nav = useNavigation();
     const styles = StyleSheet.create({
         container: {
             marginHorizontal: 15,
@@ -54,13 +55,13 @@ const ProfileCard: React.FC = () => {
                     </View>
                 </View>
                 <View style={{ display: "flex", flexDirection: "row", justifyContent:"space-between"}}>
-                    <TouchableOpacity style={{ height: 100, backgroundColor: Colors.light, alignItems: "center", justifyContent: "center", width:"48%" , borderRadius:20 }}>
+                    <TouchableOpacity style={{ height: 100, backgroundColor: Colors.light, alignItems: "center", justifyContent: "center", width:"48%" , borderRadius:20 }} onPress={(()=>{nav.navigate("Attendance")})}>
                         <Ionicons name={"calendar-outline"} size={24}/>
                         <Text style={{fontFamily:Font["poppins-semiBold"]}}>Attendance</Text>
                         <Text style={{ fontFamily:Font["poppins-bold"]  , fontSize:FontSize.lg , color:Colors.primary}}>80.15%</Text>
                     </TouchableOpacity>
                     <View style={{ width: 2, backgroundColor: Colors.light , marginVertical:10 }} />
-                    <TouchableOpacity style={{ height: 100, backgroundColor: Colors.light, alignItems: "center", justifyContent: "center", width:"48%" ,borderRadius:20}}>
+                    <TouchableOpacity style={{ height: 100, backgroundColor: Colors.light, alignItems: "center", justifyContent: "center", width:"48%" ,borderRadius:20}} onPress={()=>{nav.navigate("Result")}}>
                         <MaterialCommunityIcons name="chart-bar" color={Colors.textGray} size={26} />
                         <Text style={{fontFamily:Font["poppins-semiBold"]}}>Result</Text>
                         <Text style={{ fontFamily:Font["poppins-bold"]  , fontSize:FontSize.lg , color:Colors.primary}}>90.15%</Text>

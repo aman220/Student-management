@@ -16,6 +16,8 @@ import Hirarchy from "../screens/QuickActionScreens/Hirarchy";
 import Porgress from "../screens/AccountScreens/Progress";
 import HelpScreen from "../screens/QuickActionScreens/HelpScreen";
 import LiberaryScreen from "../screens/QuickActionScreens/LibraryScreen";
+import MyProfile from "../screens/AccountScreens/MyProfile";
+import Result from "../screens/Result";
 
 const theme = {
   ...DefaultTheme,
@@ -53,6 +55,8 @@ function RootNavigator() {
       <Stack.Screen name='Porgress' component={Porgress} />
       <Stack.Screen name='HelpScreen' component={HelpScreen} />
       <Stack.Screen name='LiberaryScreen' component={LiberaryScreen} />
+      <Stack.Screen name='MyProfile' component={MyProfile} />
+      <Stack.Screen name='Result' component={Result} />
     </Stack.Navigator>
   );
 }

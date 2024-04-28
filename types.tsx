@@ -20,6 +20,8 @@ export type RootStackParamList = {
  Porgress:undefined;
  HelpScreen:undefined;
  LiberaryScreen:undefined;
+ MyProfile :undefined;
+ Result :undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =

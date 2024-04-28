@@ -41,7 +41,7 @@ const HomeScreen: React.FC = () => {
     return (
         <View style={styles.container}>
          <LocationSection/>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
             <BannerSlider/>
             <ProfileCard/>
             {/* <TopPlacements/> */}

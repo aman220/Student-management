@@ -128,7 +128,7 @@ const LocationSection: React.FC = () => {
                   style={{
                     height: 50,
                     width: 50,
-                    backgroundColor: isDarkMode ? "#333" : Colors.light,
+                    backgroundColor: isDarkMode ? "#333" : Colors.white,
                     borderRadius: Spacing.borderRadius.xl,
                     justifyContent: "center",
                     alignItems: "center"

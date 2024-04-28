@@ -237,7 +237,7 @@ const Profile: React.FC = () => {
             <View style={styles.card}>
                 {/* my profile button  */}
                 <TouchableOpacity
-                
+                onPress={()=>{nav.navigate("MyProfile")}}
                 >
                     <View
                         style={{
