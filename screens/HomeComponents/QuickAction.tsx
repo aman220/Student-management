@@ -40,7 +40,7 @@ const QuickAction: React.FC = () => {
     const actions: Action[] = [
         { name: "Placement", icon: "school", lightColor: lightColors[0] , action: ()=>{nav.navigate("TimeTable")}},
         { name: "Attendance", icon: "clock", lightColor: lightColors[1] ,action: ()=>{nav.navigate("Attendance")}},
-        { name: "Calendar", icon: "calendar", lightColor: lightColors[2] },
+        { name: "Calendar", icon: "calendar", lightColor: lightColors[2] , action :()=>{nav.navigate("Calender")}},
         { name: "Library", icon: "library", lightColor: lightColors[3] , action: ()=>{nav.navigate("LiberaryScreen")} },
         { name: "Syllabus", icon: "book-open-page-variant", lightColor: lightColors[4] , action: ()=>{nav.navigate("Syllabus")} },
         { name: "Fee Details", icon: "credit-card", lightColor: lightColors[5] ,action: ()=>{nav.navigate("Feedetails")} },

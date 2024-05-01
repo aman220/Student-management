@@ -18,6 +18,7 @@ import HelpScreen from "../screens/QuickActionScreens/HelpScreen";
 import LiberaryScreen from "../screens/QuickActionScreens/LibraryScreen";
 import MyProfile from "../screens/AccountScreens/MyProfile";
 import Result from "../screens/Result";
+import Calender from "../screens/QuickActionScreens/Calender";
 
 const theme = {
   ...DefaultTheme,
@@ -57,6 +58,8 @@ function RootNavigator() {
       <Stack.Screen name='LiberaryScreen' component={LiberaryScreen} />
       <Stack.Screen name='MyProfile' component={MyProfile} />
       <Stack.Screen name='Result' component={Result} />
+      <Stack.Screen name='Calender' component={Calender} />
+
     </Stack.Navigator>
   );
 }

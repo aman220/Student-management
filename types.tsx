@@ -22,6 +22,7 @@ export type RootStackParamList = {
  LiberaryScreen:undefined;
  MyProfile :undefined;
  Result :undefined;
+ Calender:undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
