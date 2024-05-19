@@ -9,6 +9,7 @@ declare global {
 export type RootStackParamList = {
  HomeScreen : undefined;
  BottomNav : undefined;
+ T_BottomNav : undefined;
  LoginScreen :undefined;
  RegisterScreen :undefined;
  WelcomeScreen :undefined;
@@ -23,6 +24,7 @@ export type RootStackParamList = {
  MyProfile :undefined;
  Result :undefined;
  Calender:undefined;
+ UploadAttendance:undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =

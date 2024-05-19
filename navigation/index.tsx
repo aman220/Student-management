@@ -19,6 +19,8 @@ import LiberaryScreen from "../screens/QuickActionScreens/LibraryScreen";
 import MyProfile from "../screens/AccountScreens/MyProfile";
 import Result from "../screens/Result";
 import Calender from "../screens/QuickActionScreens/Calender";
+import T_BottomNav from "../screens/T_BottamNav/T_BottamNav";
+import UploadAttendance from "../screens/TeacherScreens/UploadAttendance";
 
 const theme = {
   ...DefaultTheme,
@@ -59,6 +61,12 @@ function RootNavigator() {
       <Stack.Screen name='MyProfile' component={MyProfile} />
       <Stack.Screen name='Result' component={Result} />
       <Stack.Screen name='Calender' component={Calender} />
+
+
+
+      {/* //teacher routes  */}
+      <Stack.Screen name='T_BottomNav' component={T_BottomNav} />
+      <Stack.Screen name='UploadAttendance' component={UploadAttendance} />
 
     </Stack.Navigator>
   );

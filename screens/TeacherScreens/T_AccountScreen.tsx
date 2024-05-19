@@ -13,18 +13,18 @@ import {
     ActivityIndicator,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import Colors from "../constants/Colors";
-import Spacing from "../constants/Spacing";
-import FontSize from "../constants/FontSize";
-import Font from "../constants/Font";
+import Colors from "../../constants/Colors";
+import Spacing from "../../constants/Spacing";
+import FontSize from "../../constants/FontSize";
+import Font from "../../constants/Font";
 import { useNavigation } from "@react-navigation/native";
 import Toast from "react-native-toast-message";
-import showToast from "../constants/Toast";
-import Space from "../constants/Space";
+import showToast from "../../constants/Toast";
+import Space from "../../constants/Space";
 
 
 
-const Profile: React.FC = () => {
+const T_AccountScreen: React.FC = () => {
 
     const Colorscheme = useColorScheme();
     const nav = useNavigation();
@@ -283,10 +283,9 @@ const Profile: React.FC = () => {
                     />
                     <View style={styles.infoContainer}>
                         <Text style={styles.name}>
-                            Aman Raj Singh
-
+                            Mr. Mridul Dixit
                         </Text>
-                        <Text style={styles.email}>2215990009</Text>
+                        <Text style={styles.email}>ama.singh_cs22@gla.ac.in</Text>
                     </View>
                 </View>
             </View>
@@ -303,33 +302,11 @@ const Profile: React.FC = () => {
                     >
                         <Text style={styles.cardText}>My Profile</Text>
                         <Image
-                            source={require("../assets/images/account.png")}
+                            source={require("../../assets/images/account.png")}
                             style={styles.verifiedIcon}
                         />
                     </View>
                 </TouchableOpacity>
-
-
-                <View
-                    style={{ backgroundColor: Colors.white, height: 2, marginBottom: 10 }}
-                ></View>
-                <TouchableOpacity
-                    onPress={() => { nav.navigate("Porgress") }}
-                >
-                    <View
-                        style={{
-                            flexDirection: "row",
-                            justifyContent: "space-between",
-                        }}
-                    >
-                        <Text style={styles.cardText}>My Progress</Text>
-                        <Image
-                            source={require("../assets/images/setting.png")}
-                            style={styles.verifiedIcon}
-                        />
-                    </View>
-                </TouchableOpacity>
-
 
                 <View
                     style={{ backgroundColor: Colors.white, height: 2, marginBottom: 10 }}
@@ -344,7 +321,7 @@ const Profile: React.FC = () => {
                     >
                         <Text style={styles.cardText}>Help Desk</Text>
                         <Image
-                            source={require("../assets/images/afeatures.png")}
+                            source={require("../../assets/images/afeatures.png")}
                             style={styles.verifiedIcon}
                         />
                     </View>
@@ -422,4 +399,4 @@ const Profile: React.FC = () => {
 
 
 
-export default Profile;
+export default T_AccountScreen;

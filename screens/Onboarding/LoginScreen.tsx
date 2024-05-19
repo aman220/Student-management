@@ -23,6 +23,16 @@ import { useNavigation } from "@react-navigation/native";
 const LoginScreen: React.FC = () => {
   const nav = useNavigation();
   const Colorscheme = useColorScheme();
+  const[rollno , setRollNo] = useState<any>();
+  const[password  , setPassword] = useState<any>();
+
+  const Redirect = ()=>{
+    if(rollno == 1234 && password == 123){
+      nav.navigate("T_BottomNav");
+    }else{
+      nav.navigate("BottomNav")
+    }
+  }
   
 
   const styles = StyleSheet.create({
@@ -83,7 +93,7 @@ const LoginScreen: React.FC = () => {
         </View>
         <View style={{ marginVertical: Space * 3 }}>
           <TextInput
-            // onChangeText={setEmail}
+            onChangeText={setRollNo}
             placeholder="Enter Your Roll No"
             placeholderTextColor={Colors.textGray}
             style={{
@@ -98,7 +108,7 @@ const LoginScreen: React.FC = () => {
 
           <View style={{ position: "relative" }}>
             <TextInput
-              // onChangeText={setPassword}
+              onChangeText={setPassword}
               placeholder="Enter User Password"
               placeholderTextColor={Colors.textGray}
               secureTextEntry
@@ -143,7 +153,7 @@ const LoginScreen: React.FC = () => {
             shadowOpacity: 0.3,
             shadowRadius: Space,
           }}
-          onPress={() => { nav.navigate("BottomNav") }}
+          onPress={() => { Redirect() }}
         >
           <Text
             style={{
